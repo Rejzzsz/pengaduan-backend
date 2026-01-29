@@ -1,0 +1,39 @@
+{
+  "name": "pengaduan-backend",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A Strapi application",
+  "scripts": {
+    "build": "strapi build",
+    "console": "strapi console",
+    "deploy": "strapi deploy",
+    "dev": "strapi develop",
+    "develop": "strapi develop",
+    "seed:example": "node ./scripts/seed.js",
+    "start": "strapi start",
+    "strapi": "strapi",
+    "upgrade": "npx @strapi/upgrade latest",
+    "upgrade:dry": "npx @strapi/upgrade latest --dry"
+  },
+  "dependencies": {
+    "@strapi/plugin-cloud": "5.34.0",
+    "@strapi/plugin-users-permissions": "5.34.0",
+    "@strapi/strapi": "5.34.0",
+    "fs-extra": "^10.0.0",
+    "mime-types": "^2.1.27",
+    "mysql2": "3.9.8",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-router-dom": "^6.0.0",
+    "styled-components": "^6.0.0"
+  },
+  "devDependencies": {},
+  "engines": {
+    "node": ">=20.0.0 <=24.x.x",
+    "npm": ">=6.0.0"
+  },
+  "strapi": {
+    "uuid": "5f747708-460a-4dba-9c6d-cb947089163c",
+    "installId": "aa7e5774a36494377f4590b35f310c1e837018d8e0fee03342f857ae5ac04efd"
+  }
+}
