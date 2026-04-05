@@ -1,0 +1,60 @@
+{
+  "kind": "collectionType",
+  "collectionName": "input_aspirasis",
+  "info": {
+    "singularName": "input-aspirasi",
+    "pluralName": "input-aspirasis",
+    "displayName": "Input Aspirasi"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "lokasi": {
+      "type": "string"
+    },
+    "ket": {
+      "type": "text"
+    },
+    "siswa": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::siswa.siswa",
+      "inversedBy": "input_aspirasis"
+    },
+    "nis": {
+      "type": "string"
+    },
+    "kelas": {
+      "type": "string"
+    },
+    "status_aspirasi": {
+      "type": "enumeration",
+      "enum": [
+        "pending",
+        "proses",
+        "selesai"
+      ]
+    },
+    "feedback": {
+      "type": "text"
+    },
+    "kategori": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::kategori.kategori",
+      "inversedBy": "input_aspirasis"
+    },
+    "foto_bukti": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  }
+}
