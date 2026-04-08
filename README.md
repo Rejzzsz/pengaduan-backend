@@ -57,7 +57,12 @@ Pastikan kamu sudah menginstal perangkat lunak berikut:
         DATABASE_PORT=3306
         DATABASE_NAME=nama_database_yang_kamu_buat_tadi
         DATABASE_USERNAME=root
-        DATABASE_PASSWORD= # Isi jika ada password, biarkan kosong jika default XAMPP
+        DATABASE_PASSWORD=
+        APP_KEYS=randomKey1,randomKey2,randomKey3,randomKey4
+        API_TOKEN_SALT=randomSalt1
+        ADMIN_JWT_SECRET=randomSecret1
+        TRANSFER_TOKEN_SALT=randomSalt2
+        JWT_SECRET=randomSecret3
         ```
 
 ### 4. Jalankan Aplikasi
